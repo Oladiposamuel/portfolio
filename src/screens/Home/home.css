@@ -1,0 +1,425 @@
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    padding: 0em 2em;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding: 0em 2em;
+        overflow: hidden;
+    }
+}
+
+.home-nav {
+    display: none;
+}
+
+.background-svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.nav-box {
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    right: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    z-index: 20;
+}
+
+@media screen and (max-width: 320px) {
+    .nav-box {
+        height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        right: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid white; */
+        z-index: 20;
+    }
+}
+
+.name-box {
+    width: max-content;
+}
+
+.name-text {
+    font-size: 1.5rem;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+    .name-text {
+        font-size: 1rem;
+        color: #777777;
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    border: 2px solid  #777777;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #777777;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: .5em .5em;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: font-size .1s ease-out;
+}
+
+@media screen and (max-width: 320px) {
+    .btn {
+        border: 2px solid  #777777;
+        border-radius: 2rem;
+        background-color: transparent;
+        color: #777777;
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: .5em .5em;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: font-size .1s ease-out;
+    }
+}
+
+.scroll-down-box {
+    position: absolute;
+    right: 2rem;
+    bottom: -3rem;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.arrow-down {
+    width: 15rem;
+}
+
+.scroll-text {
+    font-weight: 700;
+    color: #777777;
+}
+
+.big-text-box {
+    /* border: 1px solid white; */
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.full-stack {
+    text-transform: uppercase;
+    font-size: 11rem;
+    width: 100%;
+    font-weight: 700;
+    color: #777777;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1, 1.6);
+    letter-spacing: -.9rem;
+}
+
+.full-stack-hide {
+    text-transform: uppercase;
+    font-size: 11rem;
+    width: 100%;
+    font-weight: 700;
+    color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1, 1.6);
+    letter-spacing: -.9rem;
+}
+
+.developer {
+    text-transform: uppercase;
+    font-size: 11rem;
+    width: 100%;
+    font-weight: 700;
+    color: #777777;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1, 1.6);
+    letter-spacing: -.9rem;
+}
+
+.developer-hide {
+    text-transform: uppercase;
+    font-size: 11rem;
+    width: 100%;
+    font-weight: 700;
+    color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1, 1.6);
+    letter-spacing: -.9rem;
+}
+
+@media screen and (max-width: 1110px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 8rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.9rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 8rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 7rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.8rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 7rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.8rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 6rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.8rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 6rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 5rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.6rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 5rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 4rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.5rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 4rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 3rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.3rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 3rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.3rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 2rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.1rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 2rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.1rem;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .full-stack {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.1rem;
+    }
+
+    .developer {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        width: 100%;
+        font-weight: 700;
+        color: #777777;
+        display: flex;
+        flex-wrap: wrap;
+        transform: scale(1, 1.6);
+        letter-spacing: -.1rem;
+    }
+}
+
+
+.effect-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .navigate-text-home {
+        position: absolute;
+        bottom: 5rem;
+        /* border: 10px solid red; */
+        color: #777777;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }   
+}

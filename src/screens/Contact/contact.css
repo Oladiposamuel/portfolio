@@ -1,0 +1,98 @@
+.contact {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+}
+
+.contact-box {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-text {
+    color: #777777;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text {
+    color: #777777;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) { 
+    .contact {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .small-text {
+        color: #777777;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .text {
+        color: #777777;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 568px) { 
+    .small-text {
+        color: #777777;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    
+    .text {
+        color: #777777;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 420px) { 
+    .small-text {
+        color: #777777;
+        font-size: .7rem;
+        font-weight: 700;
+    }
+    
+    .text {
+        color: #777777;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 280px) { 
+    .small-text {
+        color: #777777;
+        font-size: .5rem;
+        font-weight: 700;
+    }
+    
+    .text {
+        color: #777777;
+        font-size: .7rem;
+        font-weight: 700;
+    }
+}
